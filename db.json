@@ -1,0 +1,367 @@
+{
+  "suppliers": [
+    {
+      "id": "1",
+      "name": "Supplier A",
+      "registrationNumber": "2427971971",
+      "vatNumber": "VAT28378173",
+      "phoneNumber": "0862233456",
+      "faxNumber": "0862233457",
+      "email": "suppliera@mail.com",
+      "addressLine1": "Block A, Waterford Office Park",
+      "addressLine2": "23 Bourbon Street",
+      "addressLine3": "Johannesburg"
+    },
+    {
+      "id": "2",
+      "name": "Supplier B",
+      "registrationNumber": "98317242797",
+      "vatNumber": "VAT28392881",
+      "phoneNumber": "0862233456",
+      "faxNumber": "0862233457",
+      "email": "supplierb@mail.com",
+      "addressLine1": "Block A, Waterford Office Park",
+      "addressLine2": "23 Bourbon Street",
+      "addressLine3": "Johannesburg"
+    }
+  ],
+  "supplierEmployees": [
+    {
+      "id": "1",
+      "supplierId": "1",
+      "name": "Joe",
+      "surname": "Smith",
+      "email": "joe.smith@supplier.com",
+      "phoneNumber": "+27761673031",
+      "role": "Sales"
+    },
+    {
+      "id": "2",
+      "supplierId": "2",
+      "name": "Jane",
+      "surname": "Smith",
+      "email": "jane.smith@supplier.com",
+      "phoneNumber": "+27761673031",
+      "role": "Sales"
+    }
+  ],
+  "transporters": [
+    {
+      "id": "1",
+      "name": "Transporter A",
+      "registrationNumber": "1234",
+      "vatNumber": "VAT28378173",
+      "phoneNumber": "0862233456",
+      "faxNumber": "0862233457",
+      "email": "transportera@mail.com",
+      "addressLine1": "Block A, Waterford Office Park",
+      "addressLine2": "23 Bourbon Street",
+      "addressLine3": "Johannesburg"
+    },
+    {
+      "id": "2",
+      "name": "Transporter B",
+      "registrationNumber": "5678",
+      "vatNumber": "VAT28392881",
+      "phoneNumber": "0862233456",
+      "faxNumber": "0862233457",
+      "email": "transporterb@mail.com",
+      "addressLine1": "Block A, Waterford Office Park",
+      "addressLine2": "23 Bourbon Street",
+      "addressLine3": "Johannesburg"
+    }
+  ],
+  "transporterEmployees": [
+    {
+      "id": "1",
+      "transporterId": "1",
+      "name": "Jason",
+      "surname": "Smith",
+      "email": "jason.smith@transporter.com",
+      "phoneNumber": "+27761673031",
+      "role": "Driver"
+    },
+    {
+      "id": "2",
+      "transporterId": "2",
+      "name": "Jimmy",
+      "surname": "Smith",
+      "email": "jimmy.smith@transporter.com",
+      "phoneNumber": "+27761673031",
+      "role": "Driver"
+    },
+    {
+      "id": "3",
+      "transporterId": "1",
+      "name": "Will",
+      "surname": "Smith",
+      "email": "will.smith@transporter.com",
+      "phoneNumber": "+27761673031",
+      "role": "Driver"
+    },
+    {
+      "id": "4",
+      "transporterId": "2",
+      "name": "T'Challa",
+      "surname": "Of Wakanda",
+      "email": "tchalla.wakanda@transporter.com",
+      "phoneNumber": "+27761673031",
+      "role": "Driver"
+    }
+  ],
+  "vehicles": [
+    {
+      "id": "1",
+      "transporterId": "1",
+      "numberPlate": "BC-1234",
+      "make": "Toyota",
+      "model": "M1",
+      "color": "red"
+    },
+    {
+      "id": "2",
+      "transporterId": "2",
+      "numberPlate": "BC-5678",
+      "make": "Toyota",
+      "model": "M2",
+      "color": "blue"
+    },
+    {
+      "id": "3",
+      "transporterId": "2",
+      "numberPlate": "BD-1234",
+      "make": "Toyota",
+      "model": "M3",
+      "color": "green"
+    }
+  ],
+  "trips": [
+    {
+      "id": "1",
+      "loadId": "1",
+      "transporterId": "1",
+      "vehicleId": "1",
+      "transporterEmployeeId": "1",
+      "paymentId": "1"
+    }
+  ],
+  "tripCheckpoints": [
+    {
+      "id": "1",
+      "tripId": "1",
+      "tripStatusId": "1",
+      "date": "21/05/2019",
+      "time": "09:00",
+      "address": "23 Bompas, Rosebank. Johannesburg",
+      "supplierEmployeeId": "2",
+      "transporterEmployeeId": "1"
+    },
+    {
+      "id": "2",
+      "tripId": "1",
+      "tripStatusId": "2",
+      "date": "21/05/2019",
+      "time": "12:00",
+      "address": "26 Bompas, Rosebank. Johannesburg",
+      "supplierEmployeeId": "2",
+      "transporterEmployeeId": "1"
+    },
+    {
+      "id": "3",
+      "tripId": "1",
+      "tripStatusId": "3",
+      "date": "21/05/2019",
+      "time": "13:00",
+      "address": "28 Bompas, Rosebank. Johannesburg",
+      "supplierEmployeeId": "2",
+      "transporterEmployeeId": "1"
+    },
+    {
+      "id": "4",
+      "tripId": "1",
+      "tripStatusId": "4",
+      "date": "21/05/2019",
+      "time": "19:00",
+      "address": "30 Bompas, Rosebank. Johannesburg",
+      "supplierEmployeeId": "1",
+      "transporterEmployeeId": "1"
+    }
+  ],
+  "payments": [
+    {
+      "id": "1",
+      "tripId": "1",
+      "supplierId": "1",
+      "transporterId": "1",
+      "dateReceived": "19/04/2019",
+      "terms": "20% deposit",
+      "amountPaid": "22000"
+    },
+    {
+      "id": "2",
+      "tripId": "1",
+      "supplierId": "1",
+      "transporterId": "1",
+      "dateReceived": "19/04/2019",
+      "terms": "Outstanding 80% for delivery",
+      "amountPaid": "52000"
+    }
+  ],
+  "loads": [
+    {
+      "id": "1",
+      "totalWeight": "450",
+      "distanceForTrip": "25000",
+      "pickupDate": "10/11/2019",
+      "pickupTime": "12:05",
+      "pickupLocation": "City A",
+      "dropOffDate": "12/11/2019",
+      "dropOffTime": "15:30",
+      "dropOffLocation": "City B",
+      "supplierId": "1",
+      "loadStatusId": "4"
+    },
+    {
+      "id": "2",
+      "totalWeight": "170",
+      "distanceForTrip": "25000",
+      "pickupDate": "10/11/2019",
+      "pickupTime": "12:05",
+      "pickupLocation": "City C",
+      "dropOffDate": "12/11/2019",
+      "dropOffTime": "15:30",
+      "dropOffLocation": "City D",
+      "supplierId": "2",
+      "loadStatusId": "1"
+    },
+    {
+      "id": "3",
+      "totalWeight": "190",
+      "distanceForTrip": "28000",
+      "pickupDate": "10/11/2019",
+      "pickupTime": "12:05",
+      "pickupLocation": "City D",
+      "dropOffDate": "12/11/2019",
+      "dropOffTime": "15:30",
+      "dropOffLocation": "City E",
+      "supplierId": "2",
+      "loadStatusId": "1"
+    }
+  ],
+  "loadStatus": [
+    {
+      "id": "1",
+      "status": "No offers received"
+    },
+    {
+      "id": "2",
+      "status": "Responses required"
+    },
+    {
+      "id": "3",
+      "status": "Offers received"
+    },
+    {
+      "id": "4",
+      "status": "Offer accepted"
+    }
+  ],
+  "tripStatus": [
+    {
+      "id": "1",
+      "status": "Pickup"
+    },
+    {
+      "id": "2",
+      "status": "Check Point 1"
+    },
+    {
+      "id": "3",
+      "status": "Check Point 2"
+    },
+    {
+      "id": "4",
+      "status": "Delivery"
+    }
+  ],
+  "units": [
+    {
+      "id": "1",
+      "loadId": "1",
+      "actualUnitType": "Pallet",
+      "size": "16",
+      "weight": "45",
+      "loadCategory": "Cold Storage",
+      "stackable": "Yes",
+      "hazardous": "No",
+      "commodityDescription": "Transporting organic food",
+      "quantity": "2"
+    },
+    {
+      "id": "2",
+      "loadId": "2",
+      "actualUnitType": "Pallet",
+      "size": "16",
+      "weight": "45",
+      "loadCategory": "Cold Storage",
+      "stackable": "No",
+      "hazardous": "Yes",
+      "commodityDescription": "Transporting organic food",
+      "quantity": "3"
+    },
+    {
+      "id": "3",
+      "loadId": "3",
+      "actualUnitType": "Crate",
+      "size": "16",
+      "weight": "45",
+      "loadCategory": "Cold Storage",
+      "stackable": "Yes",
+      "hazardous": "No",
+      "commodityDescription": "Transporting organic food",
+      "quantity": "3"
+    },
+    {
+      "id": "4",
+      "loadId": "2",
+      "actualUnitType": "Crate",
+      "size": "16",
+      "weight": "45",
+      "loadCategory": "Cold Storage",
+      "stackable": "No",
+      "hazardous": "No",
+      "commodityDescription": "Transporting organic food",
+      "quantity": "4"
+    }
+  ],
+  "offers": [
+    {
+      "id": "1",
+      "cost": "74000",
+      "loadId": "1",
+      "transporterId": "1",
+      "offerStatusId": "2"
+    },
+    {
+      "id": "2",
+      "cost": "124000",
+      "loadId": "1",
+      "transporterId": "2",
+      "offerStatusId": "3"
+    }
+  ],
+  "offerStatus": [
+    {
+      "id": "1",
+      "status": "pending"
+    },
+    {
+      "id": "2",
+      "status": "approved"
+    },
+    {
+      "id": "3",
+      "status": "rejected"
+    }
+  ]
+}
